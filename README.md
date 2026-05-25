@@ -1,92 +1,75 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=336791&height=200&section=header&text=Dipak%20Rijal&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Database%20Engineer%20|%20Cloud%20Architect%20|%20Auckland,%20NZ&descSize=16&descAlignY=55" width="100%" />
+# 🐘 Database Engineering — Field Notes
 
-### About me
+**By [Dipak Rijal](https://www.rijal.co.nz)** · Oracle Certified Master · PostgreSQL SME · 15+ years in production
 
-Database engineer with 15+ years across four countries — building, migrating and optimising systems that can't go down. From Oracle on bare metal to PostgreSQL in the cloud, I've worked across the full stack of enterprise data infrastructure.
-
-Currently exploring my next chapter. Previously at AWS, Cognizant (Servian), Altis Consulting, NXP Semiconductors and Capgemini.
+A curated collection of real-world database engineering knowledge — the stuff I wish someone handed me on day one.
 
 ---
 
-### 🛠 Tech stack
+## 📂 What's inside
 
-```
-Databases        Oracle 9i–19c · RAC · Exadata · Data Guard · GoldenGate · SharePlex
-                 PostgreSQL · Aurora PostgreSQL · SQL Server · Always On AG
-                 MongoDB · DocumentDB
+### PostgreSQL
+- [Bloat detection & vacuum tuning](postgres/bloat-and-vacuum.md) — why your queries slow down over time and how to fix it
+- [Autovacuum configuration guide](postgres/autovacuum-tuning.md) — production-ready settings, not defaults
+- [Logical replication troubleshooting](postgres/logical-replication.md) — slot bloat, publication drift, decoding lag
+- [Query performance checklist](postgres/query-performance.md) — systematic approach to tuning
 
-Cloud            AWS (RDS · Aurora · DMS · RDS Proxy · Timestream)
-                 Azure (SQL Database · Data Factory · SSIS)
-                 Oracle Cloud Infrastructure
+### Oracle
+- [Migration playbook: 12c → 19c](oracle/migration-12c-to-19c.md) — lessons from migrating 12 production databases
+- [Data Guard setup & monitoring](oracle/dataguard.md) — DR architecture that actually works
+- [GoldenGate replication guide](oracle/goldengate.md) — achieving sub-minute replication lag
+- [RAC troubleshooting](oracle/rac-troubleshooting.md) — common issues and fixes
 
-Architecture     HA / DR design · Multi-AZ · Multi-Region
-                 Cloud migration · Performance tuning · FinOps
-                 Terraform · VPC · IAM · CI/CD
+### SQL Server
+- [Always On AG operations](sqlserver/always-on-ag.md) — setup, failover, monitoring
+- [Performance tuning basics](sqlserver/performance-tuning.md) — profiling and query optimisation
 
-Languages        SQL · PL/SQL · PL/pgSQL · Python · Bash · Java
+### Cloud & Architecture
+- [HA/DR architecture patterns](cloud/ha-dr-patterns.md) — Multi-AZ, Multi-Region, RPO/RTO design
+- [Cloud migration strategy](cloud/migration-strategy.md) — planning near-zero-downtime migrations
+- [FinOps for databases](cloud/finops-databases.md) — right-sizing, reserved instances, storage optimisation
+- [Terraform for database infrastructure](cloud/terraform-databases.md) — IaC patterns for RDS, Aurora
 
-AI & Automation  Amazon Bedrock · SageMaker · Agentic workflows
-                 AI-assisted RCA · Runbook automation
-```
+### Scripts & Tools
+- [Bash utilities for DBAs](scripts/) — monitoring, alerting, backup validation
+- [Python automation scripts](scripts/python/) — operational runbooks, data extraction
 
 ---
 
-### 🏆 Credentials
+## 🔧 Free tools
+
+I built **[rijal.co.nz](https://www.rijal.co.nz)** — a free resource hub for database and cloud engineers:
+
+- SQL formatter & JSON beautifier
+- Cron expression translator
+- 12 dev tools (UUID, hash, Base64, regex, password gen)
+- Live AWS news + service health dashboard
+- Command palette (Ctrl+K) for power users
+
+No login. No paywall.
+
+---
+
+## 🏆 Background
 
 | | |
 |---|---|
-| 🥇 **Oracle Certified Master** | Highest Oracle certification globally (2014) |
-| 🐘 **PostgreSQL Subject Matter Expert** | AWS credential (2025) |
-| ☁️ **Oracle Cloud Architect Professional** | Oracle (2019) |
-| 🔷 **Azure Fundamentals (AZ-900)** | Microsoft |
-| 🎓 **Master of IT (Honours)** | Auckland University of Technology, NZ |
+| 🥇 Oracle Certified Master | Highest Oracle certification globally |
+| 🐘 PostgreSQL SME | Recognised expertise in RDS architecture & optimisation |
+| ☁️ Oracle Cloud Architect Professional | Cloud platform design |
+| 🎓 MIT (Honours) | Auckland University of Technology, NZ |
+
+**15+ years** across India, Switzerland, Thailand, Malaysia and New Zealand — banking, semiconductor manufacturing, government platforms, and enterprise cloud.
 
 ---
 
-### 🔧 Side project
+## 🤝 Connect
 
-**[rijal.co.nz](https://www.rijal.co.nz)** — a free resource hub for cloud and database engineers.
-
-Built from tools I wished existed when debugging production issues at 2am:
-
-- 📰 Live AWS news + database updates (PostgreSQL.org, Oracle, AWS Blog)
-- 📊 Real-time AWS service health dashboard
-- 🐘 SQL formatter, JSON beautifier, cron translator
-- 🔧 12 dev tools: UUID gen, hash gen, Base64, regex tester, password gen
-- 💻 Command palette (Ctrl+K) — VS Code-style power search
-- 💬 Built-in Q&A chatbot
-
-No login. No paywall. No newsletter wall.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dipak-rijal)
+[![Website](https://img.shields.io/badge/rijal.co.nz-336791?style=flat-square&logo=postgresql&logoColor=white)](https://www.rijal.co.nz)
 
 ---
 
-### 📈 Career highlights
+> *"The boring operational stuff — monitoring bloat, tuning autovacuum, reviewing query plans — that's what keeps production alive."*
 
-- **Oracle Certified Master** — one of the youngest to earn it at the time
-- **28,800x query performance improvement** — production PostgreSQL query reduced from 30 days to 90 seconds
-- **12 production Oracle databases** migrated from 12c to 19c (including Exadata) with minimal downtime
-- **70% query performance gains** on 24x7 semiconductor manufacturing systems
-- **Near-zero-downtime migrations** using real-time replication across multiple sites
-
----
-
-### 🏅 Recognition
-
-> *"Excellent DBA skills, ready to go the extra mile for a client and delivers the best results."*
-> — Gianfranco Oropallo, Senior Manager, AXA Bank Europe
-
-> *"Extremely hard working, very knowledgeable in the DBA field. The go-to person for any Oracle issue."*
-> — Tom Zuurbier, Manager, NXP Thailand
-
-> *"Very talented and self-driven. Always pro-active and delivers excellent results."*
-> — Elamathy Ramasamy, IT Director, Nexperia Malaysia
-
----
-
-### 📫 Let's connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dipak-rijal)
-[![Website](https://img.shields.io/badge/rijal.co.nz-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.rijal.co.nz)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dipak.rijal5@gmail.com)
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=336791&height=100&section=footer" width="100%" />
+⭐ Star this repo if you find it useful. Contributions welcome.
