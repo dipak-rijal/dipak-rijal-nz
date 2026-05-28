@@ -13,6 +13,7 @@ A curated collection of real-world database engineering knowledge — the stuff 
 - [Autovacuum configuration guide](postgres/autovacuum-tuning.md) — production-ready settings, not defaults
 - [Logical replication troubleshooting](postgres/logical-replication.md) — slot bloat, publication drift, decoding lag
 - [Query performance checklist](postgres/query-performance.md) — systematic approach to tuning
+- [Connection pooling with PgBouncer](https://github.com/dipak-rijal/dipak-rijal-nz/blob/main/connection-pooling-pgbouncer.md) — stop raising max_connections; pool instead
 
 ### Oracle
 - [Migration playbook: 12c → 19c](oracle/migration-12c-to-19c.md) — lessons from migrating 12 production databases
