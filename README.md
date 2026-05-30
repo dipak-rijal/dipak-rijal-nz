@@ -9,10 +9,10 @@ A curated collection of real-world database engineering knowledge — the stuff 
 ## 📂 What's inside
 
 ### PostgreSQL
-- [Bloat detection & vacuum tuning](postgres/bloat-and-vacuum.md) — why your queries slow down over time and how to fix it
-- [Autovacuum configuration guide](postgres/autovacuum-tuning.md) — production-ready settings, not defaults
-- [Logical replication troubleshooting](postgres/logical-replication.md) — slot bloat, publication drift, decoding lag
-- [Query performance checklist](postgres/query-performance.md) — systematic approach to tuning
+- [Bloat detection & vacuum tuning](https://github.com/dipak-rijal/dipak-rijal-nz/blob/main/bloat-and-vacuum.md) — why your queries slow down over time and how to fix it
+- [Autovacuum configuration guide](https://github.com/dipak-rijal/dipak-rijal-nz/blob/main/autovacuum-tuning.md) — production-ready settings, not defaults
+- [Logical replication troubleshooting](https://github.com/dipak-rijal/dipak-rijal-nz/blob/main/logical-replication.md) — slot bloat, publication drift, decoding lag
+- [Query performance checklist](https://github.com/dipak-rijal/dipak-rijal-nz/blob/main/query-performance.md) — systematic approach to tuning
 - [Connection pooling with PgBouncer](https://github.com/dipak-rijal/dipak-rijal-nz/blob/main/connection-pooling-pgbouncer.md) — stop raising max_connections; pool instead
 
 ### Oracle
